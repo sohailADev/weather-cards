@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+.leftSide, .rightSide{
+    height: 50vh;
+    width: 100%;
+}
+.leftSide{
+    background: red;
+}
+.rightSide{
+    background-color: blue;
+}
+.no-gutters {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  .no-gutters > [class*="col-"] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  @media (min-width: 768px) {
+   .leftSide, .rightSide{
+       height: 100vh;
+   }
+  }
+  @media (min-width: 992px) {
+    .leftSide, .rightSide{
+        height: 100vh;
+    }
+  }
